@@ -1,5 +1,4 @@
 # DemosDevcon#22Nagory
-# FMXPong
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![Top language](https://img.shields.io/github/languages/top/gbegreg/DemosDevcon-22Nagory)
 [![](https://tokei.rs/b1/github/gbegreg/MapReduce?category=code)](https://github.com//gbegreg/DemosDevcon-22Nagory)
