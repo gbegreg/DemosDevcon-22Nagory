@@ -18,5 +18,5 @@ This repo contains 4 demos :<br />
   <li><b>Jump :</b> simulate a jump</li>
 </ul>
 
-[![DevCon22 GameDev Nagory](https://www.youtube.com/watch?v=fsOH1EV8fdI/0.jpg)](https://www.youtube.com/watch?v=fsOH1EV8fdI)
+[![DevCon22 GameDev Nagory](https://www.youtube.com/watch?v=fsOH1EV8fdI/0.jpg)](https://www.youtube.com/watch?v=fsOH1EV8fdI)<br />
 (click the image to see the Youtube video)
