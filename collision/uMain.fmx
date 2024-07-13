@@ -1,0 +1,141 @@
+object Form11: TForm11
+  Left = 0
+  Top = 0
+  Caption = 'Collision'
+  ClientHeight = 492
+  ClientWidth = 848
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 0
+  object R4: TRectangle
+    Fill.Color = xFFEC8434
+    Position.X = 480.000000000000000000
+    Position.Y = 250.000000000000000000
+    Size.Width = 316.000000000000000000
+    Size.Height = 210.000000000000000000
+    Size.PlatformDefault = False
+    object Label3: TLabel
+      Align = Client
+      StyledSettings = [Family, FontColor]
+      Size.Width = 316.000000000000000000
+      Size.Height = 210.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 28.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'R4'
+      TabOrder = 0
+    end
+    object FloatAnimation1: TFloatAnimation
+      AnimationType = InOut
+      AutoReverse = True
+      Enabled = True
+      Duration = 5.000000000000000000
+      Interpolation = Sinusoidal
+      Loop = True
+      PropertyName = 'Position.Y'
+      StartValue = 250.000000000000000000
+      StopValue = 100.000000000000000000
+    end
+  end
+  object R2: TRectangle
+    Fill.Color = xFFEC8434
+    Position.X = 96.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 305.000000000000000000
+    Size.PlatformDefault = False
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family, FontColor]
+      Size.Width = 89.000000000000000000
+      Size.Height = 305.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 28.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'R2'
+      TabOrder = 0
+    end
+  end
+  object R3: TRectangle
+    Fill.Color = xFFEC8434
+    Position.X = 272.000000000000000000
+    Position.Y = 60.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    object Label2: TLabel
+      Align = Client
+      StyledSettings = [Family, FontColor]
+      Size.Width = 89.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 28.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'R3'
+      TabOrder = 0
+    end
+  end
+  object R1: TRectangle
+    Fill.Color = xFF148FAC
+    Opacity = 0.699999988079071000
+    Position.X = 248.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 186.000000000000000000
+    Size.Height = 146.000000000000000000
+    Size.PlatformDefault = False
+    object Label4: TLabel
+      Align = Client
+      StyledSettings = [Family, FontColor]
+      Size.Width = 186.000000000000000000
+      Size.Height = 146.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 28.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'R1'
+      TabOrder = 0
+    end
+  end
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 848.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object lblCollision: TLabel
+      Align = Client
+      StyledSettings = [Family]
+      Size.Width = 598.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 36.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.FontColor = claRed
+      TextSettings.HorzAlign = Center
+      TabOrder = 1
+    end
+    object Label5: TLabel
+      Align = Left
+      StyledSettings = [Family]
+      Size.Width = 250.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00070000000000000004000000}
+      TextSettings.HorzAlign = Center
+      Text = 'Use keyboard arrows to move R1'
+      TabOrder = 0
+    end
+  end
+  object Timer1: TTimer
+    Interval = 20
+    OnTimer = Timer1Timer
+    Left = 768
+    Top = 112
+  end
+end

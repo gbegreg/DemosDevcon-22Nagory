@@ -1,0 +1,41 @@
+object Form11: TForm11
+  Left = 0
+  Top = 0
+  Caption = 'Jump'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object sol: TRectangle
+    Align = Bottom
+    Position.Y = 400.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 80.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object sprite: TRectangle
+    Fill.Color = xFF389EE5
+    Position.X = 272.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 120.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Sauter: TButton
+    Position.X = 552.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 3
+    Text = 'Jump'
+    TextSettings.Trimming = None
+    OnClick = SauterClick
+  end
+  object Timer1: TTimer
+    Interval = 16
+    OnTimer = Timer1Timer
+    Left = 496
+    Top = 72
+  end
+end

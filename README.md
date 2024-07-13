@@ -1,2 +1,22 @@
 # DemosDevcon#22Nagory
- Code source of demos presented in DevCon#22
+# FMXPong
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+![Top language](https://img.shields.io/github/languages/top/gbegreg/DemosDevCon-22Nagory)
+[![](https://tokei.rs/b1/github/gbegreg/MapReduce?category=code)](https://github.com//gbegreg/DemosDevCon-22Nagory)
+[![](https://tokei.rs/b1/github/gbegreg/MapReduce?category=files)](https://github.com//gbegreg/DemosDevCon-22Nagory)
+![GitHub last commit](https://img.shields.io/github/last-commit/gbegreg/DemosDevCon-22Nagory)
+
+I presented the Nagory game at DevCon#22 on June 13, 2024 organized by the magazine Programz! at school 42 in Paris.<br />
+This repository contains the sources of the small demos presented on this occasion.<br /><br />
+These are small building blocks that allow you to create a platform game with Delphi without a third-party library.<br /><br />
+
+This repo contains 4 demos :<br />
+<ul>
+  <li><b>Animations :</b> create an animated sprite without code</li>
+  <li><b>Collision :</b> bounding box collisions test</li>
+  <li><b>Scrolling :</b> multi directional paralax scrolling</li>
+  <li><b>Jump :</b> simulate a jump</li>
+</ul>
+
+
+Grégory Bersegeay : http://www.gbesoft.fr

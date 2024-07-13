@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5A3C4A36-0BFB-4A1D-885A-F6805E3AA2B5}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="animations\Animations.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="collision\collision.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="scrolling\scrolling.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="saut\jump.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Animations">
+        <MSBuild Projects="animations\Animations.dproj"/>
+    </Target>
+    <Target Name="Animations:Clean">
+        <MSBuild Projects="animations\Animations.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Animations:Make">
+        <MSBuild Projects="animations\Animations.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="collision">
+        <MSBuild Projects="collision\collision.dproj"/>
+    </Target>
+    <Target Name="collision:Clean">
+        <MSBuild Projects="collision\collision.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="collision:Make">
+        <MSBuild Projects="collision\collision.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="scrolling">
+        <MSBuild Projects="scrolling\scrolling.dproj"/>
+    </Target>
+    <Target Name="scrolling:Clean">
+        <MSBuild Projects="scrolling\scrolling.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="scrolling:Make">
+        <MSBuild Projects="scrolling\scrolling.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="jump">
+        <MSBuild Projects="saut\jump.dproj"/>
+    </Target>
+    <Target Name="jump:Clean">
+        <MSBuild Projects="saut\jump.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="jump:Make">
+        <MSBuild Projects="saut\jump.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Animations;collision;scrolling;jump"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Animations:Clean;collision:Clean;scrolling:Clean;jump:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Animations:Make;collision:Make;scrolling:Make;jump:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
