@@ -6,7 +6,8 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, uScrolling, System.Generics.Collections,
   FMX.Layouts, FMX.Objects, FMX.Controls.Presentation, FMX.StdCtrls,
-  FMX.Edit;
+  FMX.Edit, System.Math.Vectors, FMX.Types3D, FMX.MaterialSources,
+  FMX.Controls3D, FMX.Ani, FMX.Objects3D, FMX.Viewport3D;
 
 type
   TfScrolling = class(TForm)
@@ -22,6 +23,12 @@ type
     tGameloop: TTimer;
     recFond: TRectangle;
     Label1: TLabel;
+    layDevQuest: TLayout;
+    Viewport3D1: TViewport3D;
+    Plane1: TPlane;
+    FloatAnimation4: TFloatAnimation;
+    Light1: TLight;
+    LightMaterialSource1: TLightMaterialSource;
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure btnChargerImageClick(Sender: TObject);
